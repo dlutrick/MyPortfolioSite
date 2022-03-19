@@ -98,3 +98,23 @@ header {
     transform: translateY(-8px) rotate(-45deg);
   }
 }
+
+/* Main section */
+
+@media only screen and (max-width: 768px) {
+  .main-heading {
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+  .sub-heading {
+    text-align: center;
+  }
+
+  .introduction {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    gap: 1rem;
+  }
+}
