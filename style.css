@@ -12,9 +12,17 @@ li {
   list-style-type: none;
 }
 
+button {
+  padding: 1rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px blue;
+  color: black;
+}
+
 /* Navbar */
 header {
-  border-bottom: 1px solid #e2e8f0;
+  // border-bottom: 1px solid #e2e8f0;
 }
 
 .navbar {
@@ -60,6 +68,10 @@ header {
 }
 
 @media only screen and (max-width: 768px) {
+  .navbar {
+    height: 5rem;
+  }
+
   .navbar__menu {
     position: fixed;
     left: -100%;
@@ -84,6 +96,10 @@ header {
   .hamburger {
     display: block;
     cursor: pointer;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 1.5rem 2rem 0 0;
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -96,6 +112,11 @@ header {
 
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .personal-photo {
+    width: 200px;
+    border-radius: 10px;
   }
 }
 
@@ -116,5 +137,11 @@ header {
     flex-direction: column;
     margin: 2rem;
     gap: 1rem;
+    align-items: flex-start;
+    align-items: center;
+  }
+
+  body {
+    font-size: 1.5rem;
   }
 }
