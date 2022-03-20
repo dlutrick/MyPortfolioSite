@@ -23,16 +23,8 @@ button {
   background-color: #14a76c;
 }
 
-.copyright {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  padding: 2rem 0;
-  color: #272727;
-}
-
 /* Navbar */
-.navbar {
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -74,12 +66,12 @@ button {
   color: #482ff7;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 720px) {
   .logo {
     width: 3.5rem;
   }
 
-  .navbar {
+  nav {
     height: 5rem;
   }
 
@@ -132,9 +124,24 @@ button {
   }
 }
 
+@media only screen and (min-width: 721px) {
+  .logo {
+    width: 3.5rem;
+  }
+
+  nav {
+    position: fixed;
+    width: 100%;
+  }
+
+  nav.scroll {
+    background-color: rgb(245, 246, 247);
+  }
+}
+
 /* Main section */
 /* Intro */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 720px) {
   .main-heading {
     text-align: center;
     padding-top: 2rem;
@@ -163,8 +170,14 @@ button {
   }
 }
 
+@media only screen and (min-width: 721px) {
+  .main-heading {
+    padding-top: 8rem;
+  }
+}
+
 /* Skills */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 720px) {
   .skills {
     display: flex;
     flex-direction: column;
@@ -187,7 +200,7 @@ button {
 }
 
 /* Projects */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 720px) {
   .projects {
     padding: 1.75rem 0;
     display: flex;
@@ -219,7 +232,7 @@ button {
   color: #272727;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 720px) {
   .contact {
     display: flex;
     flex-direction: column;
@@ -232,4 +245,13 @@ button {
   .contact a i {
     font-size: 2.5rem;
   }
+}
+
+/* Copyright */
+.copyright {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  padding: 2rem 0;
+  color: #272727;
 }
