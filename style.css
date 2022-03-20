@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 html {
@@ -20,6 +21,13 @@ button {
   box-shadow: 0 4px #272727;
   color: rgb(245, 246, 247);
   background-color: #14a76c;
+}
+
+.copyright {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  padding: 1.5rem 0;
 }
 
 /* Navbar */
@@ -133,12 +141,13 @@ button {
 
   .sub-heading {
     text-align: center;
+    color: #14a76c;
   }
 
   .introduction {
     display: flex;
     flex-direction: column;
-    margin: 2rem;
+    margin: 1rem;
     gap: 1rem;
     align-items: flex-start;
     align-items: center;
@@ -164,21 +173,39 @@ button {
   }
 
   .skills__header {
+    color: #272727;
   }
 
   .skills__list {
     display: flex;
     gap: 1rem;
     font-size: 3rem;
+    color: #272727;
   }
 
   /* Projects */
   @media only screen and (max-width: 768px) {
     .projects {
-      padding-top: 1.75rem;
+      padding: 1.75rem 0;
       display: flex;
       flex-direction: column;
       align-items: center;
+      background-color: rgb(245, 246, 247);
+      margin: 1rem;
+      border-radius: 10px;
+      gap: 1rem;
+    }
+
+    .projects__list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .divider {
+      width: 100%;
+      background-color: white;
+      height: 2px;
     }
   }
 }
