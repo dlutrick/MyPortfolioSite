@@ -27,7 +27,8 @@ button {
   position: absolute;
   width: 100%;
   text-align: center;
-  padding: 1.5rem 0;
+  padding: 2rem 0;
+  color: #272727;
 }
 
 /* Navbar */
@@ -137,6 +138,7 @@ button {
   .main-heading {
     text-align: center;
     padding-top: 2rem;
+    color: #272727;
   }
 
   .sub-heading {
@@ -194,6 +196,7 @@ button {
       margin: 1rem;
       border-radius: 10px;
       gap: 1rem;
+      color: #272727;
     }
 
     .projects__list {
