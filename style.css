@@ -339,7 +339,7 @@ nav {
   }
 
   .contact a {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -354,6 +354,6 @@ nav {
 
 @media only screen and (min-width: 721px) {
   .copyright {
-    font-size: 2rem;
+    font-size: 1.25rem;
   }
 }
