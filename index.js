@@ -1,3 +1,4 @@
+// navbar functionality
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".navbar__menu");
 
@@ -10,12 +11,7 @@ function mobileMenu() {
 
 const navLink = document.querySelectorAll(".navbar__link");
 
-navLink.forEach((n) => n.addEventListener("click", closeMenu));
-
-function closeMenu() {
-  hamburger.classList.remove("active");
-  navMenu.classList.remove("active");
-}
+navLink.forEach((link) => link.addEventListener("click", mobileMenu));
 
 window.onscroll = () => {
   const nav = document.querySelector("#navbar");
